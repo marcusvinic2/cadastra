@@ -1,9 +1,8 @@
-import { Product } from "./Product";
-
-const serverUrl = "http://localhost:5000";
+import { Showcase } from './showcase'
 
 function main() {
-  console.log(serverUrl);
+  const api = 'http://localhost:5000/products';
+  new Showcase(api);
 }
 
 document.addEventListener("DOMContentLoaded", main);
